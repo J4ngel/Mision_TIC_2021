@@ -1,0 +1,86 @@
+ENTRADA: 14 15 32 4
+SALIDAS:
+4 Barranquilla Atlantico
+patients
+male 1556
+female 1536
+total 3092
+medicine quantity
+mean 151.01
+std 86.40
+min 1
+max 300
+total 466918
+scheduled patients
+male 1094
+female 1098
+total 2192
+scheduled medicine quantity
+mean 149.53
+std 86.60
+min 1 Aida Lunsford f 10
+max 300 Beverly Willmon f 11
+total 327771
+14 Bogota Cundinamarca
+patients
+male 1584
+female 1666
+total 3250
+medicine quantity
+mean 149.08
+std 85.95
+min 1
+max 300
+total 484508
+scheduled patients
+male 1134
+female 1195
+total 2329
+scheduled medicine quantity
+mean 148.56
+std 84.43
+min 1 Erica Elliott f 9
+max 300 David Bearfield m 4
+total 345994
+15 Inirida Guainia
+patients
+male 1527
+female 1518
+total 3045
+medicine quantity
+mean 148.09
+std 86.35
+min 1
+max 300
+total 450938
+scheduled patients
+male 1095
+female 1123
+total 2218
+scheduled medicine quantity
+mean 147.58
+std 86.78
+min 1 Peter Hanrahan m 11
+max 300 Shirlene King f 16
+total 327334
+32 Puerto Carreno Vichada
+patients
+male 1547
+female 1603
+total 3150
+medicine quantity
+mean 151.67
+std 85.81
+min 1
+max 300
+total 477765
+scheduled patients
+male 1122
+female 1162
+total 2284
+scheduled medicine quantity
+mean 152.20
+std 85.90
+min 1 Beverly Watson f 18
+max 300 Birdie Contreras f 4
+total 347631

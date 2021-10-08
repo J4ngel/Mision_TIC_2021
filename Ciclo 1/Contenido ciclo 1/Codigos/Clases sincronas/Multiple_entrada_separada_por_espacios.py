@@ -1,0 +1,6 @@
+a, b, c = map(str,input().split())
+valor_a = int(a)
+valor_c = float(c)
+print(type(a), type(b), type(c))
+print(type(valor_a), type(b), type(valor_c))
+print(valor_a,b,valor_c)

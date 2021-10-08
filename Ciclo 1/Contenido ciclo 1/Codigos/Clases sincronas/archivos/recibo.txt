@@ -1,0 +1,1 @@
+Producto: Tomate, Precio: $500Producto: cebolla, Precio: $150
