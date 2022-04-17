@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="250.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador_interfaz">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="37.0" layoutY="21.0" text="Ingresa tu nombre: ">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_nombre" layoutX="229.0" layoutY="24.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_saludar" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" onAction="#Saludar" text="Saludar">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txt_num1" layoutX="149.0" layoutY="72.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_num2" layoutX="149.0" layoutY="114.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_Salida" editable="false" layoutX="149.0" layoutY="198.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="37.0" layoutY="72.0" text="Numero 1:">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="114.0" text="Numero 2:">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="198.0" text="Salida:">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_calcular" layoutX="444.0" layoutY="193.0" mnemonicParsing="false" onAction="#Calcular" text="Calcular">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="37.0" layoutY="156.0" text="Operación:">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbx_Operaciones" layoutX="149.0" layoutY="154.0" prefHeight="31.0" prefWidth="186.0" />
+            <RadioButton fx:id="rdb_2dec" layoutX="420.0" layoutY="119.0" mnemonicParsing="false" text="Dos decimales">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rdb_3dec" layoutX="420.0" layoutY="144.0" mnemonicParsing="false" text="Tres decimales">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rdb_0dec" layoutX="419.0" layoutY="94.0" mnemonicParsing="false" text="Sin decimales">
+               <font>
+                  <Font size="15.0" />
+               </font></RadioButton>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

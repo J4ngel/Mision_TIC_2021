@@ -1,0 +1,37 @@
+/*CREACION DE TABLAS (DDL)*/
+CREATE TABLE personas(
+P_id integer PRIMARY KEY AUTOINCREMENT,
+Nombre TEXT(20) NOT NULL,
+Apellido text(20),
+Direccion text(40),
+Ciudad text(40)
+);
+
+/*INSERTAR DATOS (DML)*/
+/*INSERTAR VALORES EN EL MISMO ORDEN*/
+INSERT INTO personas(Nombre, Apellido, Direccion, Ciudad)
+VALUES ("Daniela","Paez","Barrio Tintal", "Bogotá");
+
+INSERT INTO personas(Nombre, Apellido, Direccion, Ciudad)
+VALUES ("Jaime","Angel","Cll 8 No. 5-53", "Madrid");
+
+INSERT INTO personas(Nombre, Apellido, Direccion, Ciudad)
+VALUES ("David","Paladinez","Chapinero", "Bogotá");
+/*
+SELECT = Selecciona las columnas/ campos que quiero mostrar
+FROM = La/s tablas de donde se relacionan
+WHERE = Condicion para que me muestre los datos
+*/
+
+SELECT Nombre,Direccion /*En este caso solo me muestra la columna de nombres y direccion si es un * muestra todo*/
+FROM personas             /*Datos provenientes de la tabla persona*/
+WHERE Ciudad = "Bogotá"; /*Que muestre solo los datos que tengan como ciudad bogotá*/
+
+UPDATE personas SET Direccion = "Funza"
+WHERE Nombre = "David";
+
+DELETE FROM personas
+WHERE P_id = 2;
+
+SELECT *
+FROM personas;

@@ -1,0 +1,9 @@
+OJO con metodo nextInt/double/float() -----> no borra el salto de carril
+
+mejor usar el metodo nextline() y luego castearlo ----->nextline si borra el salto de carril
+
+
+*****Para la configuracion de la maquina virtual:********
+"vmArgs": "--module-path C:/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+
+Guardar la rutha del sdk para simplemente copiar y pegar cuando se vaya a usar el javafx en VScode

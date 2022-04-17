@@ -1,0 +1,40 @@
+------------>BASES DE DATOS<--------------
+
+Estructura que permite almacenar datos de forma permanente (como los archivos)
+
+Se define como: seríe de datos organizados y relacionados entre si donde son recolectados
+y explotados por los sistemas de información de una empresa
+
+Base de datos relacional:
+	almacena y proporciona acceso a puntos de datos relacionados entre sí.
+
+Tiene:
+
+	Filas -------------> Registros -------> Tupla
+	Columnas ----------> Atributos -------> Campos
+	Grado        ------> Numero de atributos de la tabla
+	Cardinalidad    ---> Numero de registros de la tabla
+	Restricciones   ---> literal las restricciones de la tabla
+	Dominio        ----> Tipo de dato
+	Clave primaria ----> Cada tabla va a tener un campo de este tipo, es su identificador
+	Clave Foránea -----> Clave con la que se relacionan dos tablas	
+
+Cada fila de la tabla es un registro con un ID único llamado clave
+
+SQL ----> Lenguaje
+SQL (Structured Query Languaje)
+
+Se compone de dos lenguajes mas
+
+DML  y DDL
+
+DDL ----> definir, alterar, crear, borrar bases de datos
+	CREATE ---> crea
+	ALTER  ---> altera
+	DROP	--> borra
+
+DML ----> Introducir, actualizar los datos  como tal es para manipular los datos
+	SELECT
+	INSERT
+	UPDATE
+	DELETE
