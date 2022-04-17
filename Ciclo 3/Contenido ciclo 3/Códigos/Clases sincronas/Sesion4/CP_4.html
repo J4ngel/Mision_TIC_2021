@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <!--name: el nombre del campo dentro del formulario (nombre del atributo)
+        id: nombre de ese mismo campo fuera del formulario e incluso del html
+        for: nombre del control-->
+    <form action="">
+        <h1>Registro para vacunación COVID-19</h1>
+        <label for="txt_nombre">Nombre:</label>
+        <input type="text" id="txt_nombre" name="txt_nombre" value="" placeholder="Nombre">
+        <br>
+        <br>
+        <label for="txt_apellidos">Apellidos:</label>
+        <input type="text" id="txt_apellidos" name="txt_apellidos" value="" placeholder="Apellidos">
+        <br>
+        <br>
+        <!--Para manejar los rdb con toogle el nombre de las diversas opciones debe ser igual para-->
+        <label for="">Sexo:</label>
+        <input type="radio" id="rdb_sexo" name="rdb_sexo">Hombre
+        <input type="radio" id="rdb_sexo" name="rdb_sexo">Mujer
+        <br>
+        <br>
+        <label for="txt_email">Correo:</label>
+        <input type="email" id="txt_email" name="txt_email" value="" placeholder="@">
+        <br>
+        <br>
+        <label for="txt_password">Contraseña:</label>
+        <input type="password" id="txt_password" name="txt_password">
+        <br>
+        <br>
+        <input type="checkbox" id="consenimiento" name="consenimiento">Declaro haber leído y aceptar las
+        condiciones generales del programa y la normativa sobre protección de datos
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

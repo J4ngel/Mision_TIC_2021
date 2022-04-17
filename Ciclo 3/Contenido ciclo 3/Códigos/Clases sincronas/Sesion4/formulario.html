@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas para un formulario</title>
+</head>
+<body>
+    <form action=""> <!--Todo en su interior son objetos para interactuar (botones, cuadros de texto, etc), el atributo action: indica el programa que va a procesar los datos, methon: (get) para mandar todos los datos dentro de un formulario por la URL | (post) envia los datos con el formulario no por la URL este es mas seguro, por defecto es get-->
+        <label for="">Ingrese su nombre:</label> <!--for: nombre el cual se asocia al lado-->
+        <input type="text" id="" name="" value=""> <!--type: que tipo de entrada es, id: id con el que se va a comunicar con otros programas, name:, value: valor por defecto-->
+        <br>
+        <br>
+        <label for="">Ingrese su apellido:</label>
+        <input type="text" id="" name="" value="" placeholder="Apellido" maxlength="4"> <!--indicación semitransparente en el campo de texto-->
+        <br>
+        <br>
+        <label for="">Ingrese su contraseña:</label>
+        <input type="password" id="" name=""  placeholder="contraseña" maxlength="8">
+        <br>
+        <br>
+        <label for="">Ingrese su correo electrónico:</label>
+        <input type="email" id="" name=""  placeholder="Correo">
+        <br>
+        <br>
+        <input type="checkbox" id="" name="">Casa propia
+        <input type="checkbox" id="" name="">Carro
+        <br>
+        <br>
+        <!--Por defecto los radiobuttons no vienen con el toogle, mas adelante se ve--->
+        <input type="radio" id="" name="">Hombre
+        <input type="radio" id="" name="">Mujer
+        <br>
+        <br>
+        <!--Boton generico, no es para enviar datos-->
+        <input type="button" value="Enviar">
+        <br>
+        <br>
+        <!--Submit boton, para enviar datos a x destino donde apunte el atributo action-->
+        <input type="submit" value="Enviar datos">
+        <br>
+        <br>
+        <!--combo box o listas desplegables-->
+        <select name="" id="">
+            <option value="">Colombia</option>
+            <option value="">Brasil</option>
+            <option value="">Ecuador</option>
+        </select>
+        <br>
+        <br>
+        <input  type="date">
+        <br>
+        <br>
+        <textarea name="area de texto" id="" cols="20" rows="10"></textarea>
+    </form>
+</body>
+</html>

@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'sans-serif';
+}
+
+/* Estilos del header */
+
+.Header{
+    height: 60px;
+}
+
+.Header .Contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo, .Icon_menu{
+    margin: 5px;
+    color: blue;
+}
+
+.Icon_menu{
+    display: block;
+    height:40px;
+    width: 40px;
+    font-size: 30px;
+    border:  5px solid #fba919;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.Nav{
+    position:absolute;
+    top:60px;
+    left: -100%;
+    width: 100%;
+    transition:all 0.5s;
+}
+
+.Menu{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.Menu_link{
+    display:block;
+    padding:15px;
+    background-color:#fba919;
+    color: white;
+    text-decoration: none;
+}
+
+.Menu_link:hover{
+    background-color: white;
+    color:#fba919;
+}
+
+.Clase_mostrar{
+    left:0%;
+}
+
+/* Estilos al Banner */
+
+.Banner{
+    top: -60px;
+    position: relative;
+    z-index: -500;
+    margin-bottom: 20px;
+}
+
+.Banner .Contenedor_banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.Banner_txt{
+    display: none;
+}
+
+.Info_columna{
+    background-color: #fba919;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.Titulo_seccion{
+    text-align: center;
+    font-size: 30px;
+    color:#fba919;
+}
+
+.Cursos_columna{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Descripcion_cursos{
+    position: absolute;
+    top:0;
+    left:0;
+    color: white;
+    background:rgba(0, 0, 0, 0.5);
+    width: 54%;
+    height: 99%;
+}
+
+.Titulo_cursos{
+    font-size:25px;
+    margin:5px 0px;
+}
+
+.Cursos_txt{
+    font-size:15;
+}
+
+.Footer{
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.Footer .RS{
+    display: inline-block;
+    color:#333;
+    padding:10px;
+    text-decoration: none;
+    font-size: 14px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40%;
+}
+
+/* Para que el diseño sea adaptable */
+@media(min-width: 480px){
+    .Logo{
+        font-size:40px;
+    }
+    .Titulo_banner{
+        font-size: 30px;
+        margin:5px 0;
+    }
+    .Banner_txt{
+        display:block;
+        font-size:18px;
+        margin:5px 0;
+    }
+
+    .Info{
+        display:flex;
+        justify-content:space-between;
+        margin-top: -100px;
+    }
+
+    .Info_columna{
+        width:30%;
+    }
+    .Info_titulo{
+        font-size:20px;
+        margin:5px 0;
+    }
+
+    .Titulo_seccion{
+        width:100%;
+    }
+
+    .Cursos{
+        display:flex;
+        justify-content:space-between;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .Cursos_columna{
+        width:50%;
+    }
+}

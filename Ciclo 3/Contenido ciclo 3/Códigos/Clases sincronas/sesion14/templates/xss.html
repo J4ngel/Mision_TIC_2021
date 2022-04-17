@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} xss {% endblock %}
+
+{% block content %} 
+    <h1>Inyección xss</h1>
+    <form action="/inyeccion_xss" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        <div>
+            {{form.usuario.label}}
+            {{form.usuario()}}
+        </div>
+        <div>
+            {{form.enviar()}}
+        </div>
+    </form>
+
+{% endblock %}

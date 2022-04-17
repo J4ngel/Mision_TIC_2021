@@ -1,0 +1,43 @@
+1> Abrir la carpeta del proyecto con visual code
+
+2> aprir el archivo main.py
+
+3> abrir una terminal desde visual code
+
+4> una vez cargada la terminal, se le pone el siguiente 
+   comando:
+ 	
+		py -m venv .env
+
+5> una vez creada la carpeta .env se ponen los siguientes 
+   comandos, uno por uno
+	
+	cd .\.env\
+	cd .\Scripts\
+	.\activate
+############## SIN REQUIREMENTS
+6> posterior a esto se debe evidenciar que el entorno 
+   virtual ya está activo (como se muestra en el video), 
+   por ende se procede a instalar el flask con el 
+   siguiente comando:
+
+	pip install flask
+
+7> una vez hecho esto se ejecuta el codigo del archivo 
+   main.py para verificar que no tenga problemas con las librerías
+
+################ CON REQUIREMENTS
+6> posterior a esto se debe evidenciar que el entorno 
+   virtual ya está activo (como se muestra en el video), 
+   por ende se procede a instalar los requerimentos que se necesitan con el 
+   siguiente comando:
+
+	pip install -r requirements.txt
+
+7> una vez hecho esto se ejecuta el codigo del archivo 
+   main.py para verificar que no tenga problemas con las librerías
+
+
+///////////////////Para generar los requerimentos que necesita la app:
+	
+	pip freeze > requirements.txt

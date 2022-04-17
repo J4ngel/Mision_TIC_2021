@@ -1,0 +1,27 @@
+{% extends 'base.html'  %}
+{% block title %} Lista {% endblock %}
+
+{% block content %}
+    <table  style='width: 80%'   id='tabla'  border='1' align="center">
+        <tbody>
+            <tr style="text-align: center;">
+                <td>Documento</td>
+                <td>Nombre</td>
+                <td>Ciclo</td>
+                <td>Sexo</td>
+                <td>Estado</td>
+            </tr>
+            {% for r in row %}
+            <tr>
+                <td>{{ r["documento"] }}</td>
+                <td>{{ r["nombre"] }}</td>
+                <td>{{ r["ciclo"] }}</td>
+                <td>{{ r["sexo"] }}</td>
+                <td>{{ r["estado"] }}</td>
+            </tr>
+            {% endfor%}
+            
+        </tbody>        
+    </table>
+
+{% endblock  %}

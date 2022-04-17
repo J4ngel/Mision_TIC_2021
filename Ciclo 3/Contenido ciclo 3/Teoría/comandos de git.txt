@@ -1,0 +1,26 @@
+///////////////////////PARTE LOCAL///////////////////////////
+ \-> COMANDOS GIT
+NOTAS:
+-> Si se cierra la terminal/ se sale del VS se debe usar el git init para inicializar el git
+-> Si se está trabajando en una carpeta interna, a la hora de agregar un comando se usa la ruta
+-> git init se usa una sola vez por carpeta
+
+> git init para inicializar git: señala los archivos que necesitan seguimiento
+
+> git status -s/ git status: muestra los archivos que requieren segimiento
+
+> git add nombre_archivo: toma un archivo del working directory lo pasa a stage area
+
+> git add .: Se agregan todos los archivos a la stage area
+
+> git config --global user.name "nombre de usuario": preparar el usuario donde se van a agregar los cambios al repositorio
+
+> git config --global user.email correo.com: preparar el correo donde se van a agregar los cambios al repositorio
+
+> git commit -m "Mensaje": Se le adjunta un mensaje a la versión
+
+> git log --oneline: Devuelve el numero de registro y comentarios que se hicieron en cada cambio de versión
+
+> git reset --hard #registro: Apunto a la versión con registro digitado y todas las versiones posteriores a esa se borran
+
+

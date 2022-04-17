@@ -1,0 +1,106 @@
+/* header{
+    background-color: cyan;
+}
+footer{
+    background-color: red
+} */
+
+/* cuando se quiere afectar todos los elementos se usa el * */
+
+*{/*De esta forma se pueden modificar todos los elementos de la pagina*/
+    margin:5;
+    padding: 0;
+}
+
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+h2{
+    font: bold 14px sans-serif;
+    text-align: left;
+}
+
+header,section,footer,aside,nav,article,hgroup{/*se toma un conjunto de etiquetas para modificarlas*/
+    /* border: 1px solid black; */
+    display: block;
+}
+body{
+    text-align: center;
+    background-color:gray
+}
+.container{
+    width:  960px;
+    border: 1px solid black;
+    margin: 15px auto;
+    background-color: #fff
+}
+.Cabecera{
+    background-color:#fffbb9;
+    border: 1px solid #999;
+    padding: 20
+}
+.Cabecera h1{
+    text-align: center;
+}
+.navegar{
+    background-color:#b2bec3;
+    padding:5px 15px;
+    text-align: left;
+}
+.navegar li{
+    list-style: none;
+    padding: 5px;
+    font: 14px bold sans-serif;
+    display: inline-block;
+}
+.Seccion{
+    margin: 20px;
+    width: 600px;
+    float: left;
+}
+article{
+    background-color: #fffbcc;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+article time{
+    color: #999;
+    display: block;
+    text-align: left;
+}
+
+article footer{
+    text-align: right;
+    margin-top: 20px;
+}
+article p{
+    text-align: justify;
+}
+
+.grupo{
+    margin: 20px 0px;
+    width:300px;
+    float: left;
+}
+
+.grupo blockquote{
+    border: 1px solid black;
+    padding: 30px;
+    background-color: coral;
+    margin-bottom: 20px;
+}
+footer{
+
+}
+
+.pie_pag{
+    clear: both;/*cuando no hay necesidad que un elem flotante*/
+    padding: 20px;
+    background-color: darkgray;
+    color: white
+}

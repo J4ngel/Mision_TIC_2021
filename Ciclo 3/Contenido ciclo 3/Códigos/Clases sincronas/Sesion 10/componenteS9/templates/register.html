@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="C:\entornoV2021\flask\Flask2021\Sesion9\Grupo04\componenteS9\static\css\miEstilo.css">
+
+</head>
+<body>
+  <h1>Registro para vacunación COVID-19</h1>
+
+    <form action="" method="post" name="formRegistro" onSubmit="validar_formulario();">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
+
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username"><br>
+      
+      <label for="sexo">Sexo:</label>
+      <input type="radio" id="sexo" name="sexo" value="h"> hombre
+      <input type="radio" name="sexo" id="sexo" value="m"> mujer<br>
+
+      <label for="correo">Correo:</label>
+      <input type="text" id="correo" name="correo" maxlength="100"><br>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password"><br>
+      <img src="C:\entornoV2021\flask\Flask2021\Sesion9\Grupo04\componenteS9\static\images\view.png" alt="" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();"><br>
+
+      <label for="condiciones">Condiciones</label><br>
+      <input type="checkbox" name="condiciones"> Declaro haber leido y
+      acepto las condiciones generales del programa y la normativa sobre
+      protección de datos<br><br>
+      <button type="submit" value="Enviar">Enviar</button>
+    </form>
+    <script src="C:\entornoV2021\flask\Flask2021\Sesion9\Grupo04\componenteS9\static\js\validacion.js"></script>
+    
+</body>
+</html>
+
+

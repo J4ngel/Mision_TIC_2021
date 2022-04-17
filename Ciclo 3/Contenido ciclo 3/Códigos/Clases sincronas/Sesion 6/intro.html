@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let nombre, apellido;
+        nombre = prompt("Escriba su nombre: ").toUpperCase();
+        apellido = prompt("Escriba su apellido: ").toUpperCase();
+        if(nombre==="JAIME" && apellido ==="ANGEL"){
+            alert("Puedes ingresar");
+            console.log("Puedes ingresar") //por consola
+        }else{
+            alert("No puede ingresar")
+        }
+    </script> -->
+
+    <!-- <script>
+        let max = 50;
+        let min = 1;
+        let num_al = Math.random()*(max-min)+min;
+        num_al = parseInt(num_al);
+        console.log(`|\n|\n|\n|\n|\nv\n${num_al}`);
+        while(true){
+            let num = parseInt(prompt("Ingrese un número: "));
+            if(num===num_al){
+                alert("Adivinaste el número!! :D");
+                document.write("Adivinaste el número")//Escribir el resultado en el documento html en la parte del DOM (el espacio gráfico)
+                console.log("Si si ya te vimos :v");
+                break;
+            }else if(num>=num_al){
+                alert("Fallaste, el número por adivinar es menor");
+            }else{
+                alert("Fallaste, el número por adivinar es mayor");
+            }
+        }
+
+    </script> -->
+
+    <!-- <script>
+        let num = parseInt(prompt("Ingrese hasta que número se debe presentar: "))
+        for(let i = 0; i <num; i++){
+            if(i%2 != 0){
+                continue
+            }
+            document.write(i)
+            console.log(`|\nv\n${i}`)
+        }
+    </script> -->
+
+    <script>
+        function mostrar_comprendidos(n1,n2){
+            for(let i = n1; i<=n2; i++){
+                document.write(`${i} `)
+            }
+        }
+
+        let v1 = parseInt(prompt("Ingrese el valor inferior: "))
+        let v2 = parseInt(prompt("Ingrese el valor superior: "))
+        mostrar_comprendidos(v1,v2)
+        //document.write("Hola mundo")
+    </script>
+</body>
+</html>

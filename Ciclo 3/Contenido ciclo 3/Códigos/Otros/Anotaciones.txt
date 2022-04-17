@@ -1,0 +1,64 @@
+-Agregar productos
+-Buscar productos
+-Vista productos
+-Mostrar info de productos
+-Agregar a la lista de los deseos
+-Promedio de calificaciones
+
+SELECT AVG(columna) from tabla
+ej: SELECT AVG(cuanto) from calificacion
+
+-Organizar los productos por tipo
+
+query especifico
+
+
+///////////////////////////////////////////////////////
+			Actualizar
+
+
+@app.route("/estudiante/update",methods=["POST"])
+def estudiante_update():
+    if 'usuario' in session:
+        form = formEstudiante()
+        if request.method == 'POST':
+            documento = form.documento.data
+            nombre =form.nombre.data
+            sexo = form.sexo.data
+            ciclo= form.ciclo.data
+            estado= form.estado.data
+
+            try:
+                with sqlite3.connect('/home/carlosortega/Documentos/ciclo 3/Desarrollo de software/flask/sesion12/estudiantes.db') as con:
+                    cur = con.cursor()#manipula la conexion
+                    cur.execute("UPDATE Estudiantes SET nombre=?, ciclo=?,sexo=?,estado=? WHERE documento=?",[nombre,ciclo,sexo,estado,documento])
+                    con.commit()
+                    if con.total_changes > 0:
+                        mensaje="EStudiante modificado"
+                    else:
+                        mensaje="EStudiante no se pudo modificar"
+            except Error:
+                print(Error)
+            finally:
+                return mensaje
+    else:
+        flash('Accion no permitida')
+        return render_template('error.html')
+
+
+
+
+-Mensajes informativos
+////////////////////////////////////////////////////////
+			ESTRUCTURA
+->Importar: 
+from flask import flash
+
+->Parte que va en el html:
+{% for message in get_flashed_messages() %}
+                    <div class="alerta">{{ message }}</div>
+{% endfor %}
+
+-> donde se quiere mostrar una alerta (en el python):
+flash("Mensaje de alerta a mostrar")
+return redirect('ruta')  ó return render_template('archivo')

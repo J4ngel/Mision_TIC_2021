@@ -1,0 +1,14 @@
+{% extends "base/base.html" %}
+
+{% block title %} Suma: {{n1}}+{{n2}}={{resultado}}{% endblock %}
+
+{% block content %}
+    <h2>Suma</h2>
+    {% if resultado>0 %}
+        <p>el resultado es positivo</p>
+    {% else %}
+    <p><p>el resultado es negativo o cero</p></p>
+    {%  endif %}
+
+    <h3>{{resultado}}</h3>
+{% endblock %}

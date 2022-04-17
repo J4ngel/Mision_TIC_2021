@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="form-register">
+    <form action="/register" method="POST">
+        <div class="sesion">
+            <h4 style="font-size: 40px;">Registro</h4>
+        </div>
+        <div class="input_text">
+            <ul> <input class="textfield" type="text" name="email" placeholder="ingresa tu correo"></ul>
+            <ul> <input class="textfield" type="text" name="name" placeholder="ingresa tu nombre"></ul>
+            <ul> <input class="textfield" type="text" name="username" placeholder="ingresa tu usuario"></ul>
+            <ul> <input class="textfield" type="password" name="pass1" placeholder="ingresa tu contraseña"></ul>
+            <ul> <input class="textfield" type="password" name="pass2" placeholder="confirma tu contraseña"></ul>
+            <ul> <input class="calendar" type="date" name="date"></ul>
+            <ul> <input class="radio" type="radio" name="gen" value="female">Femenino<input  type="radio" name="gen" value="male">Masculino</ul>
+            <ul> <input class="boton" type="submit" value="Registrar"></ul>
+            <h1 style="font-size: 20px;">¿Ya tienes una cuenta?</h1>
+            <a style="font-size: 20px;" href="/"> Iniciar sesión</a>
+        </div>
+
+    </form>
+
+</div>
+
+
+{% endblock %}

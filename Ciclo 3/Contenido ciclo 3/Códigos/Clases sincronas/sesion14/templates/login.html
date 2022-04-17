@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+
+{% block content %} 
+
+    <h1>login</h1>
+        <form action="/login" id="formulariologin" name="formulariologin" method="POST" class="formLogin" novalidate>
+            {{ form.hidden_tag() }}
+
+                <div>
+                    {{ form.usuario.label }}
+                    {{ form.usuario(size=15) }} <br><br>
+
+                </div>
+                <div>
+                    {{ form.clave.label }}
+                    {{ form.clave(size=15) }}
+                    <button class="form_botonL" type="button" onclick="mostrarContrasena()"> Mostrar </button>
+                    <br><br>
+                </div>
+                <div>
+                    {{ form.enviar() }}
+                    {{ form.crear() }}
+                </div>
+        </form>
+{% endblock %}

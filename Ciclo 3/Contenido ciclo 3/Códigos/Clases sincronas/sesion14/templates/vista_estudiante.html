@@ -1,0 +1,29 @@
+{% extends 'base.html'  %}
+{% block title %} Consulta {% endblock %}
+
+{% for message in get_flashed_messages()%}
+        {{message}}
+    {% endfor %}
+{% block content %} 
+
+    <table  style='width: 80%'   id='tabla'  border='1' align="center">
+        <tbody>
+            <tr style="text-align: center;">
+                <td>Documento</td>
+                <td>Nombre</td>
+                <td>Ciclo</td>
+                <td>Sexo</td>
+                <td>Estado</td>
+            </tr>
+            {% if row %}
+            <tr>
+                <td>{{ row["documento"] }}</td>
+                <td>{{ row["nombre"] }}</td>
+                <td>{{ row["ciclo"] }}</td>
+                <td>{{ row["sexo"] }}</td>
+                <td>{{ row["estado"] }}</td>
+            </tr>
+            {% endif%}
+        </tbody>        
+    </table>
+{% endblock %}
