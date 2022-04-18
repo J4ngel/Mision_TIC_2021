@@ -1,0 +1,8 @@
+Se deberá realizar un
+programa en Java que incluya el uso de arreglos
+de dos dimensiones.
+
+El programa deberá simular un sistema de reservas de asientos en una aerolínea.
+
+El programa deberá mostrar cuales asientos están libres y cuales no, para que el usuario
+pueda gestionar su reserva.
